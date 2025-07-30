@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-// Local images
 import img1 from "../assets/case1.jpeg";
 import img2 from "../assets/case2.jpeg";
 import img3 from "../assets/case3.jpeg";
@@ -15,21 +14,14 @@ const images = [img1, img2, img3, img4, img5, img6, img7];
 const GallerySection = () => {
   const [currentIndex, setCurrentIndex] = useState(null);
 
-  const openImage = (index) => {
-    setCurrentIndex(index);
-  };
+  const openImage = (index) => setCurrentIndex(index);
+  const closeModal = () => setCurrentIndex(null);
 
-  const closeModal = () => {
-    setCurrentIndex(null);
-  };
-
-  const showPrev = () => {
+  const showPrev = () =>
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
-  };
 
-  const showNext = () => {
+  const showNext = () =>
     setCurrentIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
-  };
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -64,8 +56,7 @@ const GallerySection = () => {
               <img
                 src={img}
                 alt={`Gallery ${index + 1}`}
-                className="w-full object-contain"
-                style={{ height: "100%", maxHeight: "100%", maxWidth: "100%" }}
+                className="w-full h-auto object-cover"
               />
             </div>
           ))}
@@ -75,29 +66,36 @@ const GallerySection = () => {
       {/* Lightbox Modal */}
       {currentIndex !== null && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[9999] p-4">
+          {/* Close Button */}
           <button
             onClick={closeModal}
             className="absolute top-6 right-6 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+            aria-label="Close"
           >
             <X size={24} />
           </button>
 
+          {/* Prev Button */}
           <button
             onClick={showPrev}
-            className="absolute left-6 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+            className="absolute left-4 md:left-10 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+            aria-label="Previous"
           >
             <ChevronLeft size={28} />
           </button>
 
+          {/* Image */}
           <img
             src={images[currentIndex]}
             alt={`Gallery Full ${currentIndex + 1}`}
-            className="max-h-[90vh] w-auto object-contain mx-auto z-40"
+            className="max-h-[90vh] w-auto object-contain z-40"
           />
 
+          {/* Next Button */}
           <button
             onClick={showNext}
-            className="absolute right-6 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+            className="absolute right-4 md:right-10 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+            aria-label="Next"
           >
             <ChevronRight size={28} />
           </button>
