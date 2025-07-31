@@ -2,7 +2,7 @@ import React from "react";
 import FounderImg from "../../assets/FounderImg.png";
 
 const FounderSection = () => (
-  <section className="w-full px-4 sm:px-6 py-16 mt-0 bg-white dark:bg-gray-900">
+  <section className="w-full px-4 sm:px-6 py-16 sm:py-20 bg-white dark:bg-gray-900">
   <div className="max-w-7xl mx-auto bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-6 sm:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
     {/* Text Content */}
