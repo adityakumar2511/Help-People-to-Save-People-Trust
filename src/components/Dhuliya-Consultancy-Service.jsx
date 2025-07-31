@@ -49,7 +49,7 @@ const DhuliyaConsultancy = () => {
   //   }
   // };
   return (
-    <div className="relative bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white min-h-screen">
+    <div className="relative bg-gray-100 text-gray-800 dark:text-white min-h-screen">
 
   {/* Top Banner */}
   <div className="w-full h-52 sm:h-64 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center px-4">

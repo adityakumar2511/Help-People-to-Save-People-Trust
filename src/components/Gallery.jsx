@@ -36,7 +36,7 @@ const GallerySection = () => {
   }, [currentIndex]);
 
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 py-0 px-0">
+    <section className="bg-gray-100 py-0 px-0">
   {/* Banner */}
   <div className="w-full h-52 sm:h-64 md:h-72 lg:h-80 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center shadow-md">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center px-4">

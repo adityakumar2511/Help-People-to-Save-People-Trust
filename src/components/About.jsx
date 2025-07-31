@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="relative bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white min-h-screen mb-10">
+    <section className="relative bg-gray-100 text-gray-800 dark:text-white min-h-screen mb-10">
   {/* Banner */}
   <div className="w-full h-48 sm:h-64 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center px-4">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center">

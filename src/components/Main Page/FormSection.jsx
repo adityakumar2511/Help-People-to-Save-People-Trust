@@ -2,7 +2,7 @@ import React from "react";
 
 const DualForms = () => {
   return (
-    <section className="w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white mt-20 px-4 sm:px-6 lg:px-10 py-10">
+    <section className="w-full bg-gray-100 text-gray-800 dark:text-white mt-20 px-4 sm:px-6 lg:px-10 py-10">
   {/* Grid Layout for Forms */}
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
     
