@@ -71,7 +71,7 @@ const ContactUs = () => {
         onChange={handleChange}
         placeholder="Full Name"
         required
-        className="w-full p-3 rounded-md bg-white  outline-none focus:ring-2 focus:ring-[#ec7e35]"
+        className="w-full p-3 rounded-md bg-white text-gray-800 outline-none focus:ring-2 focus:ring-[#ec7e35]"
       />
       <input
         type="email"
@@ -80,7 +80,7 @@ const ContactUs = () => {
         onChange={handleChange}
         placeholder="Email Address"
         required
-        className="w-full p-3 rounded-md bg-white  outline-none focus:ring-2 focus:ring-[#ec7e35]"
+        className="w-full p-3 rounded-md bg-white text-gray-800 outline-none focus:ring-2 focus:ring-[#ec7e35]"
       />
       <input
         type="tel"
@@ -89,13 +89,14 @@ const ContactUs = () => {
         onChange={handleChange}
         placeholder="Phone Number"
         required
-        className="w-full p-3 rounded-md bg-white  outline-none focus:ring-2 focus:ring-[#ec7e35]"
+        className="w-full p-3 rounded-md bg-white text-gray-800 outline-none focus:ring-2 focus:ring-[#ec7e35]"
       />
       <select
         name="service"
         value={formData.service}
         onChange={handleChange}
-        className="w-full p-3 rounded-md bg-white  outline-none focus:ring-2 focus:ring-[#ec7e35]"
+        className="w-full p-3 rounded-md bg-white 
+        text-gray-800 outline-none focus:ring-2 focus:ring-[#ec7e35]"
       >
         <option>Legal Aid</option>
         <option>Medical Help</option>

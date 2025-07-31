@@ -12,7 +12,7 @@ const AboutUs = () => {
 
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
     {/* About Box */}
-    <div className="bg-white  rounded-2xl shadow-lg p-6 sm:p-8 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35]">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35]">
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#0070C0] mb-6">
         About
       </h2>
@@ -24,7 +24,7 @@ const AboutUs = () => {
     {/* History | Vision | Mission Section */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {/* Our Story */}
-      <div className="bg-white  rounded-2xl shadow-md p-6 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35] hover:shadow-xl">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35] hover:shadow-xl">
         <h3 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-4 text-center">
           📜 Our Story
         </h3>
@@ -34,7 +34,7 @@ const AboutUs = () => {
       </div>
 
       {/* Vision */}
-      <div className="bg-white  rounded-2xl shadow-md p-6 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35] hover:shadow-xl">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35] hover:shadow-xl">
         <h3 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-4 text-center">
           🌍 Our Vision
         </h3>
@@ -45,7 +45,7 @@ const AboutUs = () => {
       </div>
 
       {/* Mission */}
-      <div className="bg-white  rounded-2xl shadow-md p-6 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35] hover:shadow-xl">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35] hover:shadow-xl">
         <h3 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-4 text-center">
           🎯 Our Mission
         </h3>

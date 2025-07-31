@@ -86,7 +86,7 @@ const DhuliyaConsultancy = () => {
     ].map((item, index) => (
       <div
         key={index}
-        className="bg-white  border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-500 hover:scale-[1.02]"
+        className="bg-white text-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-500 hover:scale-[1.02]"
       >
         <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-3">
           {item.title}
@@ -98,7 +98,7 @@ const DhuliyaConsultancy = () => {
     ))}
 
     {/* Contact Section */}
-    <div className="bg-white  border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-500 hover:scale-[1.02]">
+    <div className="bg-white text-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-500 hover:scale-[1.02]">
       <h2 className="text-lg sm:text-xl font-semibold text-[#0070C0] mb-3">
         Contact Us
       </h2>
@@ -109,7 +109,7 @@ const DhuliyaConsultancy = () => {
     </div>
   </div>
 
-      {/* <div className="max-w-3xl mx-auto bg-white  p-8 rounded-xl shadow-md mb-10">
+      {/* <div className="max-w-3xl mx-auto bg-white text-gray-800 p-8 rounded-xl shadow-md mb-10">
         <h2 className="text-3xl font-semibold text-center text-[#0070C0] mb-8">
           Contact with Dhuliya Consultancy Services
         </h2>
