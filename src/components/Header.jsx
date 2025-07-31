@@ -43,7 +43,7 @@ const Header = () => {
 
   return (
     <>      {/* Header Section */}
-     <header className="p-4 shadow-md font-body bg-white dark:bg-black sticky top-0 z-50">
+     <header className="p-4 shadow-md font-body bg-white sticky top-0 z-50">
   <div className="max-w-7xl mx-auto w-full flex items-center justify-between gap-4 sm:gap-8 md:gap-12">
     
     {/* Logo Section - Always Left */}
