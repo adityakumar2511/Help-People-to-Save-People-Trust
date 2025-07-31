@@ -63,7 +63,7 @@ const SangamHealthcare = () => {
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
     
     {/* Section 1 */}
-    <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
+    <div className="bg-white  border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
       <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-3">
         Patient Care Services
       </h2>
@@ -73,7 +73,7 @@ const SangamHealthcare = () => {
     </div>
 
     {/* Section 2 */}
-    <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
+    <div className="bg-white  border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
       <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-3">
         Free Health Camps
       </h2>
@@ -83,7 +83,7 @@ const SangamHealthcare = () => {
     </div>
 
     {/* Section 3 */}
-    <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
+    <div className="bg-white  border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
       <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-3">
         Upcoming HPSPT Cancer Hospital
       </h2>
@@ -115,7 +115,7 @@ const SangamHealthcare = () => {
 
 
 
-      {/* <div className="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
+      {/* <div className="max-w-3xl mx-auto bg-white  p-8 rounded-xl shadow-md">
         <h2 className="text-3xl font-semibold text-center text-[#0070C0] mb-8">
           Contact with Sangam Health Care
         </h2>

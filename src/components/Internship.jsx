@@ -30,7 +30,7 @@ const InternshipsVolunteer = () => {
       ].map((card, index) => (
         <div
           key={index}
-          className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-transparent hover:border-[#ec7e35] shadow-md transition duration-700 hover:scale-105"
+          className="bg-white  p-6 rounded-xl border border-transparent hover:border-[#ec7e35] shadow-md transition duration-700 hover:scale-105"
         >
           <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-2">
             {card.title}
