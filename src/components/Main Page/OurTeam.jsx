@@ -57,51 +57,59 @@ const OurTeam = () => {
   };
 
   return (
-    <section className="w-full px-6 py-20 bg-gray-100 text-center">
-      <h2 className="text-4xl font-bold text-[#0070C0] mb-8 ">Our Team</h2>
-      <div
-        className="relative"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-      >
-        {/* Scroll Buttons */}
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-[#0070C0]"
-        >
-          <MdChevronLeft size={40} />
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-[#0070C0]"
-        >
-          <MdChevronRight size={40} />
-        </button>
+    <section className="w-full px-4 sm:px-6 py-16 sm:py-20 bg-gray-100 text-center">
+  {/* Section Title */}
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0070C0] mb-8">
+    Our Team
+  </h2>
 
-        {/* Cards */}
+  {/* Scroll Container */}
+  <div
+    className="relative"
+    onMouseEnter={() => setIsHovering(true)}
+    onMouseLeave={() => setIsHovering(false)}
+  >
+    {/* Left Scroll Button - hidden on small screens */}
+    <button
+      onClick={() => scroll("left")}
+      className="hidden sm:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 z-10 text-[#0070C0] bg-white/80 rounded-full p-1 shadow-md hover:bg-white transition"
+    >
+      <MdChevronLeft size={36} />
+    </button>
+
+    {/* Right Scroll Button - hidden on small screens */}
+    <button
+      onClick={() => scroll("right")}
+      className="hidden sm:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 z-10 text-[#0070C0] bg-white/80 rounded-full p-1 shadow-md hover:bg-white transition"
+    >
+      <MdChevronRight size={36} />
+    </button>
+
+    {/* Team Cards Container */}
+    <div
+      ref={scrollRef}
+      className="flex gap-4 sm:gap-6 overflow-x-auto scroll-smooth px-2 sm:px-12 py-2 sm:py-4 scrollbar-hide"
+    >
+      {teamMembers.map((member, index) => (
         <div
-          ref={scrollRef}
-          className="flex gap-6 overflow-hidden px-12 scroll-smooth"
+          key={index}
+          className="group min-w-[250px] max-w-xs sm:min-w-[280px] sm:max-w-sm bg-white p-6 rounded-xl shadow-lg flex flex-col items-center justify-center hover:scale-105 transition-all duration-300 hover:bg-orange-50 mx-auto"
         >
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="group min-w-[250px] bg-white p-6 rounded-xl shadow-lg flex flex-col items-center justify-center transform hover:scale-105 transition-all duration-300 hover:bg-orange-50"
-            >
-              <FaUserTie
-                size={64}
-                className="mb-4 text-[#ec7e35] transition duration-300 group-hover:text-black"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 transition duration-300 group-hover:text-[#0070C0]">
-                {member.name}
-              </h3>
-              <p className="text-md text-gray-700">{member.role}</p>
-              <p className="text-sm text-gray-500">{member.department}</p>
-            </div>
-          ))}
+          <FaUserTie
+            size={56}
+            className="mb-3 text-[#ec7e35] transition duration-300 group-hover:text-black"
+          />
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 group-hover:text-[#0070C0] transition">
+            {member.name}
+          </h3>
+          <p className="text-sm sm:text-base text-gray-700">{member.role}</p>
+          <p className="text-xs sm:text-sm text-gray-500">{member.department}</p>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
   );
 };
 

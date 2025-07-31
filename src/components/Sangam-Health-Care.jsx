@@ -51,76 +51,68 @@ const SangamHealthcare = () => {
 
   return (
     <div className="relative bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white min-h-screen">
-  
+
   {/* Top Banner */}
   <div className="w-full h-64 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center">
-    <h1 className="text-4xl md:text-5xl font-bold text-black text-center">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center px-4">
       Sangam Healthcare Support
     </h1>
   </div>
 
-  {/* Image Banner Section */}
-  {/* <div className="flex justify-center py-10 px-4">
-    <div className="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-xl overflow-hidden shadow-lg border-4 border-transparent hover:border-[#ec7e35] transition-all duration-700 hover:scale-105">
-      <img
-        src={SHC}
-        alt="Sangam Healthcare Banner"
-        className="w-full h-full object-cover"
-      />
+  {/* Main Content */}
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+    
+    {/* Section 1 */}
+    <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
+      <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-3">
+        Patient Care Services
+      </h2>
+      <p className="text-base leading-relaxed text-justify">
+        We provide professional home care through <strong>Sangam Health Home Care</strong> under the supervision of <strong>Manager Deepa Nishad</strong>. For inquiries, call <strong>+91-7052097771</strong>.
+      </p>
     </div>
-  </div> */}
 
-      {/* Main Content */}
-      <div className="max-w-5xl mx-auto px-6 py-12 space-y-10">
-        {/* Section 1 */}
-        <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-6 shadow-md transition-all duration-700 hover:scale-105">
-          <h2 className="text-2xl font-semibold text-[#0070C0] mb-2">
-            Patient Care Services
-          </h2>
-          <p className="text-base leading-relaxed text-justify">
-            We provide professional home care through <strong>Sangam Health Home Care</strong> under the supervision of <strong>Manager Deepa Nishad</strong>. For inquiries, call <strong>+91-7052097771</strong>.
-          </p>
-        </div>
+    {/* Section 2 */}
+    <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
+      <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-3">
+        Free Health Camps
+      </h2>
+      <p className="text-base leading-relaxed text-justify">
+        Regular free health camps and medical aid initiatives are conducted for underprivileged communities, focusing on preventive care and treatment outreach.
+      </p>
+    </div>
 
-        {/* Section 2 */}
-        <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-6 shadow-md transition-all duration-700 hover:scale-105">
-          <h2 className="text-2xl font-semibold text-[#0070C0] mb-2">
-            Free Health Camps
-          </h2>
-          <p className="text-base leading-relaxed text-justify">
-            Regular free health camps and medical aid initiatives are conducted for underprivileged communities, focusing on preventive care and treatment outreach.
-          </p>
-        </div>
+    {/* Section 3 */}
+    <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-5 sm:p-6 shadow-md transition-all duration-700 hover:scale-105">
+      <h2 className="text-xl sm:text-2xl font-semibold text-[#0070C0] mb-3">
+        Upcoming HPSPT Cancer Hospital
+      </h2>
+      <p className="text-base leading-relaxed text-justify">
+        HPSPT is working on establishing a cancer hospital to offer affordable and accessible cancer treatment to patients in need. This initiative aims to provide high-quality oncology care at minimal cost.
+      </p>
+    </div>
+  </div>
 
-        {/* Section 3 */}
-        <div className="bg-white dark:bg-gray-800 border border-transparent hover:border-[#ec7e35] rounded-xl p-6 shadow-md transition-all duration-700 hover:scale-105">
-          <h2 className="text-2xl font-semibold text-[#0070C0] mb-2">
-            Upcoming HPSPT Cancer Hospital
-          </h2>
-          <p className="text-base leading-relaxed text-justify">
-            HPSPT is working on establishing a cancer hospital to offer affordable and accessible cancer treatment to patients in need. This initiative aims to provide high-quality oncology care at minimal cost.
-          </p>
-        </div>
+  {/* Patient Registration Form */}
+  <div className="w-full px-4 sm:px-6 lg:px-8 mt-8 mb-16">
+    <div className="max-w-4xl mx-auto">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-center text-[#0070C0] mb-6">
+        📝 Sangam Health Home Care – Patient Registration Form
+      </h2>
+      <div className="aspect-w-16 aspect-h-9">
+        <iframe
+          title="Patient Registration Form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd7W0KcS4VopOMruskKwLuQ1b50jvB6kiWYtnYd8Zi6g9U8ZQ/viewform?embedded=true"
+          className="w-full h-[400px] sm:h-[500px] rounded-xl border border-[#ec7e35]"
+          allowFullScreen
+        >
+          Loading…
+        </iframe>
       </div>
-      {/* Patient Registration Form */}
-      <div className="w-full flex justify-center mt-16 px-4 mb-10">
-        <div className="w-[70%]">
-          <h2 className="text-3xl font-semibold text-center text-[#0070C0] mb-6">
-            📝 Sangam Health Home Care – Patient Registration Form
-          </h2>
-          <iframe
-            title="Patient Registration Form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSd7W0KcS4VopOMruskKwLuQ1b50jvB6kiWYtnYd8Zi6g9U8ZQ/viewform?embedded=true"
-            width="100%"
-            height="400"
-            frameBorder="0"
-            className="rounded-xl border border-[#ec7e35]"
-            style={{ overflow: "hidden" }}
-          >
-            Loading…
-          </iframe>
-        </div>
-      </div>
+    </div>
+  </div>
+
+
 
 
       {/* <div className="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">

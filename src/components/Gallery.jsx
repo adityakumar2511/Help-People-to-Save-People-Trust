@@ -37,71 +37,72 @@ const GallerySection = () => {
 
   return (
     <section className="bg-gray-100 dark:bg-gray-900 py-0 px-0">
-      {/* Banner */}
-      <div className="w-full h-64 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center shadow-md">
-        <h1 className="text-4xl md:text-5xl font-bold text-black text-center px-4">
-          Gallery
-        </h1>
-      </div>
+  {/* Banner */}
+  <div className="w-full h-52 sm:h-64 md:h-72 lg:h-80 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center shadow-md">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center px-4">
+      Gallery
+    </h1>
+  </div>
 
-      {/* Image Grid */}
-      <div className="max-w-7xl mx-auto mt-10 mb-16 px-4 sm:px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {images.map((img, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-xl shadow-lg border border-transparent hover:border-[#ec7e35] transition-all duration-700 hover:scale-105 cursor-pointer"
-              onClick={() => openImage(index)}
-            >
-              <img
-                src={img}
-                alt={`Gallery ${index + 1}`}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Lightbox Modal */}
-      {currentIndex !== null && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[9999] p-4">
-          {/* Close Button */}
-          <button
-            onClick={closeModal}
-            className="absolute top-6 right-6 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
-            aria-label="Close"
-          >
-            <X size={24} />
-          </button>
-
-          {/* Prev Button */}
-          <button
-            onClick={showPrev}
-            className="absolute left-4 md:left-10 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
-            aria-label="Previous"
-          >
-            <ChevronLeft size={28} />
-          </button>
-
-          {/* Image */}
+  {/* Image Grid */}
+  <div className="max-w-7xl mx-auto mt-10 mb-16 px-4 sm:px-6 md:px-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {images.map((img, index) => (
+        <div
+          key={index}
+          className="overflow-hidden rounded-xl shadow-lg border border-transparent hover:border-[#ec7e35] transition-all duration-700 hover:scale-105 cursor-pointer"
+          onClick={() => openImage(index)}
+        >
           <img
-            src={images[currentIndex]}
-            alt={`Gallery Full ${currentIndex + 1}`}
-            className="max-h-[90vh] w-auto object-contain z-40"
+            src={img}
+            alt={`Gallery ${index + 1}`}
+            className="w-full h-60 sm:h-64 md:h-72 lg:h-80 object-cover"
           />
-
-          {/* Next Button */}
-          <button
-            onClick={showNext}
-            className="absolute right-4 md:right-10 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
-            aria-label="Next"
-          >
-            <ChevronRight size={28} />
-          </button>
         </div>
-      )}
-    </section>
+      ))}
+    </div>
+  </div>
+
+  {/* Lightbox Modal */}
+  {currentIndex !== null && (
+    <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[9999] p-2 sm:p-4">
+      {/* Close Button */}
+      <button
+        onClick={closeModal}
+        className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+        aria-label="Close"
+      >
+        <X size={24} />
+      </button>
+
+      {/* Prev Button */}
+      <button
+        onClick={showPrev}
+        className="absolute left-2 sm:left-4 md:left-10 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+        aria-label="Previous"
+      >
+        <ChevronLeft size={28} />
+      </button>
+
+      {/* Image */}
+      <img
+        src={images[currentIndex]}
+        alt={`Gallery Full ${currentIndex + 1}`}
+        className="max-h-[80vh] sm:max-h-[85vh] w-auto object-contain z-40"
+      />
+
+      {/* Next Button */}
+      <button
+        onClick={showNext}
+        className="absolute right-2 sm:right-4 md:right-10 text-white bg-[#ec7e35] rounded-full p-2 hover:bg-orange-600 z-50"
+        aria-label="Next"
+      >
+        <ChevronRight size={28} />
+      </button>
+    </div>
+  )}
+</section>
+
   );
 };
 

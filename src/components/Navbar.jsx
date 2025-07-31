@@ -40,12 +40,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-black text-white shadow-md font-body top-0 z-[9999] relative">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className="relative bg-black text-white shadow-md font-body top-0 z-[9999]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        {/* Brand / Logo */}
         <div className="text-xl font-bold font-heading">HPSPT</div>
 
-        {/* Desktop Nav */}
-        <ul className="hidden md:flex space-x-6 items-center" ref={navRef}>
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex space-x-6 items-center">
           {navLinks.map((link, i) => (
             <li key={i} className="relative group">
               {!link.dropdown ? (
@@ -61,13 +62,13 @@ const Navbar = () => {
                 </Link>
               ) : (
                 <div
-                  className="cursor-pointer flex items-center space-x-1 relative"
+                  className="cursor-pointer flex items-center space-x-1"
                   onMouseEnter={() => {
                     if (hoverTimeout) clearTimeout(hoverTimeout);
                     setServiceOpen(true);
                   }}
                   onMouseLeave={() => {
-                    const timeout = setTimeout(() => setServiceOpen(false), 300); // 1 sec delay
+                    const timeout = setTimeout(() => setServiceOpen(false), 300);
                     setHoverTimeout(timeout);
                   }}
                 >
@@ -82,8 +83,9 @@ const Navbar = () => {
                   </span>
                   <ChevronDown size={16} />
 
+                  {/* Desktop Dropdown */}
                   {serviceOpen && (
-                    <ul className="absolute top-full left-0 mt-2.5 bg-gray-800 rounded shadow-md w-64 py-2 z-[9999]">
+                    <ul className="absolute top-full left-0 mt-2 bg-gray-800 rounded shadow-md w-64 py-2 z-[99999]">
                       {link.items.map((item, idx) => (
                         <li key={idx}>
                           <Link
@@ -110,15 +112,15 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile Toggle Button */}
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">
+        {/* Mobile Menu Toggle */}
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white focus:outline-none">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Navigation */}
       {isOpen && (
-        <ul ref={mobileRef} className="md:hidden px-4 pb-4 space-y-2 bg-black text-sm z-[9999] relative">
+        <ul className="md:hidden bg-black text-white px-4 py-4 space-y-2 text-sm z-[9999]">
           {navLinks.map((link, i) => (
             <li key={i}>
               {!link.dropdown ? (
@@ -129,6 +131,7 @@ const Navbar = () => {
                       ? "text-[#ec7e35] underline decoration-[#ec7e35] decoration-[4px] underline-offset-[10px]"
                       : "hover:text-[#ec7e35] hover:underline decoration-[#ec7e35] decoration-[3px] underline-offset-8"
                   }`}
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </Link>
@@ -156,6 +159,7 @@ const Navbar = () => {
                           <Link
                             to={item.to}
                             className="block py-1 hover:text-[#ec7e35]"
+                            onClick={() => setIsOpen(false)}
                           >
                             {item.name}
                           </Link>
@@ -171,6 +175,7 @@ const Navbar = () => {
             <Link
               to="/donate"
               className="inline-block mt-2 bg-[#ec7e35] px-4 py-2 rounded hover:bg-orange-600"
+              onClick={() => setIsOpen(false)}
             >
               Donate
             </Link>
@@ -178,6 +183,7 @@ const Navbar = () => {
         </ul>
       )}
     </nav>
+
   );
 };
 

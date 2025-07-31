@@ -43,40 +43,45 @@ const Header = () => {
 
   return (
     <>      {/* Header Section */}
-      <header className="p-4 shadow-md font-body bg-white dark:bg-black sticky top-0 z-50">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-          {/* Logo Section */}
-          <div ref={logoRef} className="flex items-center space-x-3">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-20 w-20 object-cover rounded-full"
-            />
-          </div>
+     <header className="p-4 shadow-md font-body bg-white dark:bg-black sticky top-0 z-50">
+  <div className="max-w-7xl mx-auto w-full flex items-center justify-between gap-4 sm:gap-8 md:gap-12">
+    
+    {/* Logo Section - Always Left */}
+    <div ref={logoRef} className="flex items-center">
+      <img
+        src={logo}
+        alt="Logo"
+        className="h-14 w-14 sm:h-20 sm:w-20 object-cover rounded-full"
+      />
+    </div>
 
-          {/* Text Section */}
-          <div className="text-center sm:text-right">
-            <h1
-              ref={(el) => (headingRef.current[0] = el)}
-              className="text-xl sm:text-3xl font-heading font-bold web-name"
-            >
-              Help People to Save People Trust
-            </h1>
-            <p
-              ref={(el) => (headingRef.current[1] = el)}
-              className="text-base sm:text-lg font-heading web-name2 font-bold"
-            >
-              Non Government Organization
-            </p>
-            <p
-              ref={(el) => (headingRef.current[2] = el)}
-              className="text-sm sm:text-base font-heading font-bold"
-            >
-              Reg. No.: 493/17
-            </p>
-          </div>
-        </div>
-      </header>
+    {/* Text Section - Responsive */}
+    <div className="text-right flex flex-col space-y-0.5 pr-2">
+      <h1
+        ref={(el) => (headingRef.current[0] = el)}
+        className="text-base sm:text-[8px] md:text-xl lg:text-2xl font-bold web-name leading-snug"
+      >
+        Help People to Save People Trust
+      </h1>
+      <p
+        ref={(el) => (headingRef.current[1] = el)}
+        className="text-xs sm:text-sm md:text-base font-heading font-semibold web-name2"
+      >
+        Non Government Organization
+      </p>
+      <p
+        ref={(el) => (headingRef.current[2] = el)}
+        className="text-[10px] sm:text-xs md:text-sm font-heading font-medium"
+      >
+        Reg. No.: 493/17
+      </p>
+    </div>
+
+  </div>
+</header>
+
+
+
 
 
       {/* Navbar Component */}
