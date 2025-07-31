@@ -40,7 +40,7 @@ const ContactUs = () => {
 ``
 
   return (
-    <div className="bg-gray-100 text-gray-800 dark:text-white min-h-screen">
+    <div className="bg-gray-100 text-gray-800 min-h-screen">
   {/* Banner */}
   <div className="w-full h-52 sm:h-64 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center text-center px-4">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black">

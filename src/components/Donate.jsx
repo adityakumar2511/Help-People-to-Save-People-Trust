@@ -36,7 +36,7 @@ const DonatePage = () => {
   // };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 dark:text-white">
+    <div className="min-h-screen bg-gray-100 text-gray-800 ">
   {/* Banner */}
   <div className="w-full h-64 sm:h-72 md:h-80 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center">
     <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-black text-center px-4">
