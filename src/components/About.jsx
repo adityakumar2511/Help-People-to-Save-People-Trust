@@ -10,7 +10,7 @@ const AboutUs = () => {
     </h1>
   </div>
 
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-12">
     {/* About Box */}
     <div className="bg-white text-gray-800 rounded-2xl shadow-lg p-6 sm:p-8 transition-all duration-700 transform hover:scale-105 border border-transparent hover:border-[#ec7e35]">
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#0070C0] mb-6">

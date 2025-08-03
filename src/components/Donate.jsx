@@ -68,6 +68,27 @@ const DonatePage = () => {
     </p>
   </div>
 </section>
+
+
+  {/* Google Form */}
+  <section className="max-w-5xl mx-auto px-4 py-8 sm:py-10">
+    <h2 className="text-2xl sm:text-3xl font-semibold text-center text-[#0070C0] mb-6">
+      Donation Registration Form
+    </h2>
+    <div className="flex justify-center">
+      <iframe
+        title="Donation Form"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSczl57S5gI5ICTPEBP0wrFdfuoYI5-jQ0gQdZmXaYyDsIZk6A/viewform?embedded=true"
+        width="100%"
+        height="600"
+        className="rounded-xl border border-[#ec7e35] sm:w-[90%] md:w-[80%]"
+        frameBorder="0"
+        allowFullScreen
+      >
+        Loading…
+      </iframe>
+    </div>
+  </section>
     </div>
   );
 };
