@@ -19,7 +19,7 @@ const SolvedCases = () => {
   const [photoIndex, setPhotoIndex] = useState(0);
 
   return (
-    <section className="w-full px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-tr mt-20 from-[#1e293b] to-[#0f172a] text-white relative">
+    <section className="w-full px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-tr from-[#1e293b] to-[#0f172a] text-white relative">
   {/* Header */}
   <div className="max-w-7xl mx-auto text-center mb-10 sm:mb-12">
     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0070C0] mb-3">

@@ -7,7 +7,7 @@ const FounderSection = () => (
     
     {/* Text Content */}
     <div className="opacity-0 animate-fade-in-left">
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-4">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
         Founder’s Profile
       </h2>
 
@@ -15,24 +15,24 @@ const FounderSection = () => (
         Mr. Shashank Dhuliya
       </p>
 
-      <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-medium mb-3 leading-relaxed">
+      <p className="text-sm sm:text-base text-gray-800 font-medium mb-3 leading-relaxed">
         Founder & National President<br />
         Help People To Save People Trust<br />
         Practising Lawyer at Allahabad High Court<br />
         Legal & Social Reformer | Director, DCS
       </p>
 
-      <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-white mt-4 mb-2">
+      <h3 className="text-lg sm:text-xl font-bold text-gray-800 mt-4 mb-2">
         Professional Background
       </h3>
-      <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-justify leading-relaxed">
+      <p className="text-sm sm:text-base text-gray-800  text-justify leading-relaxed">
         Mr. Shashank Dhuliya is a dedicated legal professional...
       </p>
 
-      <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-white mt-6 mb-2">
+      <h3 className="text-lg sm:text-xl font-bold text-gray-800 mt-6 mb-2">
         Education & Expertise
       </h3>
-      <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-justify leading-relaxed">
+      <p className="text-sm sm:text-base text-gray-800 text-justify leading-relaxed">
         <strong>LL.B.</strong> Allahabad State University<br />
         <strong>Expertise:</strong> Criminal Law, PIL, Human Rights, NGO Law, RTI
       </p>

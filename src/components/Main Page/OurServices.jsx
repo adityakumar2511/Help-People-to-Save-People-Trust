@@ -33,13 +33,13 @@ const OurServices = () => {
   ];
 
   return (
-    <section className="w-full px-4 sm:px-6 py-16 sm:py-20 bg-gray-100 text-gray-800">
+    <section className="w-full px-4 sm:px-6 py-16 sm:py-20 text-gray-800">
   {/* Heading Section */}
   <div className="max-w-7xl mx-auto text-center mb-10 sm:mb-12">
     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0070C0] mb-4">
       Our Services
     </h2>
-    <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto">
+    <p className="text-base sm:text-lg text-[#747575] max-w-xl mx-auto">
       We are committed to social justice, healthcare, and welfare support.
     </p>
   </div>
@@ -60,7 +60,7 @@ const OurServices = () => {
         </h3>
 
         {/* Bullet Points */}
-        <ul className="list-disc list-inside text-sm sm:text-base text-gray-700 space-y-2">
+        <ul className="list-disc list-inside text-sm sm:text-base text-[#747575] space-y-2">
           {service.points.map((point, i) => (
             <li key={i} className="opacity-80 group-hover:opacity-100 transition-opacity duration-300">
               {point}

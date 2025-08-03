@@ -1,8 +1,8 @@
 import React from "react";
-import bannerImg from "../../assets/homeBanner.png";
+import bannerImg from "../../assets/homeBanner.jpeg";
 
 const BannerSection = () => (
-  <section className="relative w-full h-[50vh] sm:h-[26.5vh] md:h-[55vh] lg:h-[55vh] xl:h-[65vh]">
+  <section className="relative w-full h-[25vh] sm:h-[25vh] md:h-[65vh] lg:h-[70vh] xl:h-[70vh]">
   <div className="absolute inset-0 w-full h-full">
     <img
       src={bannerImg}
