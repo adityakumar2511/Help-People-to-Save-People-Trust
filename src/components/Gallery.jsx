@@ -40,7 +40,7 @@ const GallerySection = () => {
   {/* Banner */}
   <header className="w-full h-48 md:h-64 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center shadow-md px-4">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center">
-      Internships & Volunteering
+      Gallery
     </h1>
   </header>
 
