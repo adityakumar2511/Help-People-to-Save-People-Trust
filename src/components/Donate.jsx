@@ -38,11 +38,11 @@ const DonatePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 ">
   {/* Banner */}
-  <div className="w-full h-64 sm:h-72 md:h-80 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center">
-    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-black text-center px-4">
-      Donate & Make a Difference
+  <header className="w-full h-48 md:h-64 bg-gradient-to-r from-[#ec7e35] to-[#0070C0] flex items-center justify-center shadow-md px-4">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center">
+      Donate
     </h1>
-  </div>
+  </header>
 
   {/* Description */}
   <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 space-y-6 text-justify leading-relaxed">
