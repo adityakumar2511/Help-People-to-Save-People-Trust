@@ -57,7 +57,7 @@ const ContactUs = () => {
       <p>Civil Lines, Allahabad, Uttar Pradesh – 211001</p>
       <p><strong>Email:</strong> pahpspt@gmail.com</p>
       <p><strong>Phone:</strong> +91-8808649962</p>
-      <p><strong>Website:</strong> www.helppeopletosavepeopletrust.org/home</p>
+      <p><strong>Website:</strong> www.helppeopletosavepeopletrust.org</p>
     </div>
 
     {/* Right: Appointment Form */}
