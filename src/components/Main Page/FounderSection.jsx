@@ -39,13 +39,14 @@ const FounderSection = () => (
     </div>
 
     {/* Image Content */}
-    <div className="opacity-0 animate-fade-in-right w-full flex justify-center">
-      <img
-        src={FounderImg}
-        alt="Adv. Shashank Dhuliya"
-        className="w-full max-w-sm sm:max-w-md md:max-w-full h-auto object-cover rounded-xl shadow-xl border-4 border-[#ec7e35] hover:scale-105 transition-transform duration-500"
-      />
-    </div>
+    {/* Image Content */}
+<div className="opacity-0 animate-fade-in-right w-full flex justify-center items-start">
+  <img
+    src={FounderImg}
+    alt="Adv. Shashank Dhuliya"
+    className="w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] max-h-[450px] object-cover object-top rounded-xl shadow-xl border-4 border-[#ec7e35] hover:scale-105 transition-transform duration-500"
+  />
+</div>
   </div>
 </section>
 
