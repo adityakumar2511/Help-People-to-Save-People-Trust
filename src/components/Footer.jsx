@@ -95,7 +95,7 @@ const Footer = () => {
       <p className="text-[#ec7e35] font-medium text-md">
         Developed by{" "}
         <a
-          href="https://adityakumar2511.github.io/My-Portfolio/"
+          href="https://aditya-kumar-2511.vercel.app/"
           target="_blank"
           rel="noreferrer"
           className="hover:text-green-500 transition"
